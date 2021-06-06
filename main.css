@@ -1,0 +1,29 @@
+body{
+    background-image: url("Agri_farm.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+nav li {
+    display: inline;
+    float: right;
+}
+nav ol{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav a{
+    display: block;
+    background-color: green;
+}
+
+#frontMenu{
+    background-color: yellowgreen;
+    padding: 10px;
+}
+
+.tab{
+    background-color: rgba(196, 196, 196, 40%); 
+}
