@@ -1,29 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
 body{
-    background-image: url("Agri_farm.jpg");
-    background-repeat: no-repeat;
-    background-position: center top;
+    font-family: Helvetica, sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.11),rgba(0, 0, 0, 0.11),rgba(0, 0, 0, 0.11)),url(Agri_farm.jpg);    
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /*border: 1px solid #ffff;/*for test*/
+}
+/* the styling for header section and navigation*/
+header {
+    position: relative;
+    height: 60px;
+    width: 100%;
+    background-color:rgba(196, 196, 196, 0.4);
+    /*border: 1px solid rgba(255, 255, 255, 0.514);/*for test*/
+}
+nav ul {
+    position: inherit;
+    list-style-type: none;
+    overflow: hidden;
+    float: right;
+    /*border: 1px solid rgba(255, 255, 255, 0.514);/*for test*/
 }
 nav li {
-    display: inline;
-    float: right;
-}
-nav ol{
+    float: left;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
 }
 nav a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 20px;
+    transition:0.6s ease;
+    /*border: 1px solid rgba(255, 255, 255, 0.514);/*for test*/
+}
+nav a:hover{
+    background-color:rgb(255, 255, 255) ;
+}
+.title{
+    position: relative;
+    float: left;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000;
+    /*border: 1px solid rgb(73, 218, 37);/*for test*/
+}
+
+/*the short navigation buttons*/
+
+.front-nav table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    text-decoration: none;
+    /*border: 1px solid rgb(73, 218, 37);/*for test*/
+}
+.front-nav button{
+    padding: 10px 10px;
+    margin: 10px 40px;
+    border-radius: 100px;
+    border-width: 0px;
+    width: 400px;
+    height: 200px;
+    background-color:rgba(196, 196, 196, 0.26);
+    text-align: center;
+    font-size: medium;
+    /*border: 1px solid rgb(73, 218, 37);/*for test*/       
+}
+.front-nav button img{
     display: block;
-    background-color: green;
+    margin-left: auto;
+    margin-right: auto;
+    /*border: 1px solid rgb(73, 218, 37);/*for test*/       
+}
+.front-nav button:hover{
+    background-color: rgba(255, 255, 255, 0.74);
+    border-width: 3px;
+    border-style: solid;
 }
 
-#frontMenu{
-    background-color: yellowgreen;
-    padding: 10px;
-}
+/*footer section*/
+footer{
+    position: absolute;      
+    height: 70px;
+    width: 100%;
+    bottom: 0;
+    padding: 10px 10px;
+    background-color: rgba(196, 196, 196, 0.4);
+    /*border: 1px solid rgb(73, 218, 37);/*for test*/
 
-.tab{
-    background-color: rgba(196, 196, 196, 40%); 
 }
