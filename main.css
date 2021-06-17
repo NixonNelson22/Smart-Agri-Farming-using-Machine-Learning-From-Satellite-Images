@@ -102,18 +102,94 @@ nav a:hover{
 
 }
 /* login form styling*/
-.login{
-    display: none;
+
+.container{
+    display: none;/*default state is hidden*/
+    background-color: #0000009a;
+    height: 100%;
+    width: 100%;
+    padding: 100px 300px;
+    margin-bottom: auto;
+    position: absolute;
+    top: 0px;
 }
-.login {
-    display: grid;
-    position:fixed;
-    top:50%;
-    right: 50vw;
-    grid-template-columns: 2fr 2fr;
-    grid-area: "
-    border: 1px solid rgb(73, 218, 37);/*for test*/
+
+.loginheader{
+    display: block;
+    background-color: #fdfdfd;
+    padding: 20px;
+    color: #F48432;
+    text-align: center;
+    margin: 0px;
+    font-size:x-large;
+    font-weight: bold;
+    border-radius: 10px;
 }
+
+.loginbody{
+    display: grid;                                                              
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto  auto  auto  auto  auto ;
+    grid-template-areas:    
+        "text       input"
+        "text       input"
+        "cancel     submit"
+        "linklabel  links";
+    row-gap: 20px;
+    column-gap: 20px;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px 30px;
+    /*border: 1px solid rgb(73, 218, 37);/*for test*/
+}
+.loginbody label{
+    padding: 10px 10px;
+}
+.loginbody input{
+    background-color: #C4C4C4;
+    border-style: none;
+    border-radius: 5px;
+}
+.loginbody input::placeholder{
+    text-align: center;
+}
+.loginbody .submitbutton{
+    background-color: #F48432;
+    grid-area: submit;
+    display: block;
+    width: 162px;
+    height: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.loginbody .cancelbutton{
+    background-color: #F48432;
+    grid-area: cancel;
+    display: block;
+    width: 162px;
+    height: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-style: none;
+    margin-left: auto;
+}
+
+.loginbody .signuplabel{
+    grid-area: linklabel;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+.loginbody .signupimg{
+    grid-area: links;
+    display: block;
+    align-items: center;
+}
+
 
 /* title section*/
 .title{
@@ -183,5 +259,5 @@ footer a{
     text-decoration: none;
     text-align: center;
     color: #000000;
-    border: 1px solid rgb(73, 218, 37);/*for test*/
+    /*border: 1px solid rgb(73, 218, 37);/*for test*/
 }

@@ -13,23 +13,28 @@
     <header>
         <div class="title">
             <h1>Agri-farm</h1>
-        </div>
-            
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Market</a></li>
-                    <li><a href="#">Policy</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li>
-                        <a href="#" class="profile">
-                            <img src="images/Paomedia-Small-N-Flat-Profile 1.svg">
-                            Profile
-                        </a>
-                    </li>
-                    <li><a href="#" class="log"><button type="button" onclick="document.getElementById('loginform').style.display='block'">Login</button></a></li>
-                </ul>
-            </nav>
+        </div>    
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Market.html">Market</a></li>
+                <li><a href="policy.html">Policy</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li>
+                    <a href="#" class="profile">
+                        <img src="images/Paomedia-Small-N-Flat-Profile 1.svg">
+                        Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="log">
+                        <button type="button" onclick="document.getElementById('loginform').style.display='block'">
+                            Login
+                        </button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main class="front-nav">
@@ -51,23 +56,21 @@
                 </td>
             </tr>
         </table>
-        <form id="loginform" method="POST" class="login">
-            <img src="images/Paomedia-Small-N-Flat-Profile 1.svg">
-            <label>
-                Username
-                <input type="text" placeholder="Enter username" name="username">
-            </label>
-            <label>
-                Password
-                <input type="password" placeholder="Enter Password" name="Password">
-            </label>
-            <input type="submit">
-            <div class="signup">
-                <label>Sign up</label>
-                <a href="#"><img src="/images/icons/google_signin_buttons/web/1x/btn_google_signin_light_normal_web.png"></a>
-            </div>
-
-        </form>
+        <div class="container" id="loginform"> 
+            <form id="form" method="POST" class="login">
+                <label class="loginheader">Login</label>
+                <div class="loginbody">
+                    <label>Username</label>
+                    <input type="text" placeholder="Enter username" name="username" class="usernametext">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter Password" name="Password" class="passwordtext">
+                    <input type="submit" class="submitbutton">
+                    <button type="button" class="cancelbutton">Cancel</button>
+                    <label class="signuplabel">Sign up</label>
+                    <a href="#" class="signupimg"><img src="/images/icons/google_signin_buttons/web/1x/btn_google_signin_light_normal_web.png"></a>                    
+                </div>
+            </form>            
+        </div>
     </main>
 </body>
 <footer class="tab">
