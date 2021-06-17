@@ -5,7 +5,8 @@
 }
 body{
     font-family: Helvetica, sans-serif;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.11),rgba(0, 0, 0, 0.11),rgba(0, 0, 0, 0.11)),url(Agri_farm.jpg);    
+    background-image:   linear-gradient(rgba(0, 0, 0, 0.11),rgba(0, 0, 0, 0.11),rgba(0, 0, 0, 0.11))
+                        ,url(Agri_farm.jpg);    
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -14,13 +15,14 @@ body{
 /* the styling for header section and navigation*/
 header {
     position: relative;
-    height: 60px;
+    height: 80px;
     width: 100%;
+    padding: 10px 20px;
     background-color:rgba(196, 196, 196, 0.4);
     /*border: 1px solid rgba(255, 255, 255, 0.514);/*for test*/
 }
 nav ul {
-    position: inherit;
+    position: relative;
     list-style-type: none;
     overflow: hidden;
     float: right;
@@ -42,6 +44,78 @@ nav a{
 nav a:hover{
     background-color:rgb(255, 255, 255) ;
 }
+
+.profile img{
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 60px;
+    margin-right: 10px;
+    margin-left: 0px;
+    border-color: #000000 ;
+    border-width: 0.5px;
+    border-style: solid;
+    /*border: 1px solid rgb(42, 253, 0);/*for test*/   
+}
+.profile{
+    display: flex;
+    height: 60px;
+    padding-left: 1px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    background: #FFFFFF;
+    border-radius: 40px 10px 10px 40px;
+    /*border: 1px solid rgb(0, 89, 253);/*for test*/   
+    
+}
+.log{
+    padding: 0px;
+    margin: 0px;
+}
+
+.log button{
+    position: relative;
+    text-align: center;
+    background-color: #F48432;
+    border-radius: 10px;
+    border-style: none;
+    height: 40px;
+    width: 80px;
+    padding: 5px 20px;
+    margin: 9px;
+}
+/*overriding the hover from nav*/
+.profile:hover{
+    background-color: #3bb316d3;
+}
+.log:hover{
+    background-color: #00000000;
+}
+.log button:hover {
+    background-color: #fdfdfd;
+    color: #F48432;
+
+}
+/* login form styling*/
+.login{
+    display: none;
+}
+.login {
+    display: grid;
+    position:fixed;
+    top:50%;
+    right: 50vw;
+    grid-template-columns: 2fr 2fr;
+    grid-area: "
+    border: 1px solid rgb(73, 218, 37);/*for test*/
+}
+
+/* title section*/
 .title{
     position: relative;
     float: left;
@@ -54,16 +128,16 @@ nav a:hover{
     /*border: 1px solid rgb(73, 218, 37);/*for test*/
 }
 
-/*the short navigation buttons*/
+/*the front navigation buttons*/
 
-.front-nav table{
+main table{
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
     text-decoration: none;
     /*border: 1px solid rgb(73, 218, 37);/*for test*/
 }
-.front-nav button{
+main button{
     padding: 10px 10px;
     margin: 10px 40px;
     border-radius: 100px;
@@ -75,13 +149,13 @@ nav a:hover{
     font-size: medium;
     /*border: 1px solid rgb(73, 218, 37);/*for test*/       
 }
-.front-nav button img{
+main button img{
     display: block;
     margin-left: auto;
     margin-right: auto;
     /*border: 1px solid rgb(73, 218, 37);/*for test*/       
 }
-.front-nav button:hover{
+main button:hover{
     background-color: rgba(255, 255, 255, 0.74);
     border-width: 3px;
     border-style: solid;
@@ -93,8 +167,21 @@ footer{
     height: 70px;
     width: 100%;
     bottom: 0;
-    padding: 10px 10px;
+    padding: 10px 20px;
     background-color: rgba(196, 196, 196, 0.4);
+    font-family: Helvetica, sans-serif;
+
     /*border: 1px solid rgb(73, 218, 37);/*for test*/
 
+}
+footer a{
+    display: block;
+    float: right;
+    padding: 0px 10px;
+    margin: 0px 40px;
+    background-color: #00000000;
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+    border: 1px solid rgb(73, 218, 37);/*for test*/
 }
